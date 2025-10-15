@@ -40,7 +40,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile.schedule
-          push: true
+          push: false
           tags: |
             test/schedule:latest
           platforms: linux/amd64
