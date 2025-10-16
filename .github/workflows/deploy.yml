@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-push-cloud-image:
-    runs-on: depot-ubuntu-24.04
+    runs-on: depot-ubuntu-24.04-4	
     permissions:
       contents: read
       id-token: write
@@ -33,7 +33,7 @@ jobs:
             NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=dummy
 
   build-and-push-schedule-image:
-    runs-on: depot-ubuntu-24.04
+    runs-on: depot-ubuntu-24.04-4	
     permissions:
       contents: read
       id-token: write
@@ -54,7 +54,7 @@ jobs:
           platforms: linux/amd64
 
   build-and-push-server-image:
-    runs-on: depot-ubuntu-24.04
+    runs-on: depot-ubuntu-24.04-4	
     permissions:
       contents: read
       id-token: write
